@@ -76,7 +76,31 @@ namespace StringDateTimeMath8523
             Console.WriteLine(sentence.Replace("","_"));
 
             sentence = sentence.Remove(0, 7); //My name is Leo Alsaç
-            string {  }
+            string[] words = sentence.Split(' ');
+            foreach(string word in words)
+            {
+                Console.WriteLine(word);
+            }
+            Console.WriteLine(words[3]); //Leo
+
+            string test1 = "test1";
+            string test2 = "test2";
+            if (test1 == test2)
+                Console.WriteLine("test1 = test2");
+            else
+                Console.WriteLine("test1 != test2");
+
+            if (test1.Equals(test2))
+                Console.WriteLine("test1 = test2");
+            else
+                Console.WriteLine("test1 !=test2");
+
+            string adSoyad = " Çağıl Alsaç "; //Çağıl Alsaç
+            Console.WriteLine("\"" + adSoyad + "\"");
+            Console.WriteLine("\"" + adSoyad.Trim() + "\"");
+            Console.WriteLine("\"" + adSoyad.TrimStart() + "\"");
+            Console.WriteLine("\"" + adSoyad.TrimEnd() + "\"");
+            Console.WriteLine(adSoyad.Contains("ğ") ? "ğ var" : "ğ yok"); // ? if else görevi görür 
 
 
 
